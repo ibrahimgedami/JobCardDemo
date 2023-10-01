@@ -1,9 +1,3 @@
-//
-//  HorizontalGridView.swift
-//  SwiftUI_ImageLoader
-//
-//  Created by Ibrahim Mo Gedami on 9/24/23.
-//
 
 import SwiftUI
 

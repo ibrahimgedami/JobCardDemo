@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaSoft-Medium.ttf">
+            <string>ProximaSoft-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoDataViewController" customModule="My_Meal_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="DmI-Bi-5Z4"/>
+                <outlet property="imageLogo" destination="16h-pg-ZZt" id="t8s-aC-aIg"/>
+                <outlet property="lblTitle" destination="wxo-vy-faD" id="G3M-rm-Xde"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p22-s3-cbB">
+                    <rect key="frame" x="10" y="370" width="394" height="156"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_splach" translatesAutoresizingMaskIntoConstraints="NO" id="16h-pg-ZZt">
+                            <rect key="frame" x="104.5" y="5" width="185.5" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="185.5" id="7ik-lP-Sjt"/>
+                                <constraint firstAttribute="height" constant="120" id="p66-2y-KuW"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" text="You Dont Have Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxo-vy-faD" userLabel="You Dont Have">
+                            <rect key="frame" x="8" y="140" width="398" height="16"/>
+                            <fontDescription key="fontDescription" name="ProximaSoft-Medium" family="Proxima Soft" pointSize="16"/>
+                            <color key="textColor" name="MainWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wxo-vy-faD" firstAttribute="leading" secondItem="p22-s3-cbB" secondAttribute="leading" constant="8" id="17k-Rh-h3Z"/>
+                        <constraint firstAttribute="bottom" secondItem="wxo-vy-faD" secondAttribute="bottom" id="5OQ-37-nfi"/>
+                        <constraint firstItem="16h-pg-ZZt" firstAttribute="centerX" secondItem="p22-s3-cbB" secondAttribute="centerX" id="7yY-cR-Fbk"/>
+                        <constraint firstItem="16h-pg-ZZt" firstAttribute="top" secondItem="p22-s3-cbB" secondAttribute="top" constant="5" id="HCE-JB-8ew"/>
+                        <constraint firstItem="wxo-vy-faD" firstAttribute="top" secondItem="16h-pg-ZZt" secondAttribute="bottom" constant="15" id="Omw-2l-9S0"/>
+                        <constraint firstItem="wxo-vy-faD" firstAttribute="centerX" secondItem="p22-s3-cbB" secondAttribute="centerX" constant="10" id="cJ3-uj-zb0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="p22-s3-cbB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="L5w-ug-T2H"/>
+                <constraint firstItem="p22-s3-cbB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lqg-Mn-IOZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p22-s3-cbB" secondAttribute="trailing" constant="10" id="cLb-bm-A2I"/>
+                <constraint firstItem="p22-s3-cbB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l2j-8X-QTY"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_splach" width="185.5" height="182"/>
+        <namedColor name="MainWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
